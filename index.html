@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>War</title>
+        <link rel="icon" href="card-back.jpg">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="navbar">
+            <button id="new-deck-btn" class="shuffle-btn">New Deck</button>
+            <p id="remaining-cards" class="remaining-cards">Remaining cards: 00</p>
+        </div>
+        
+        <h2 id="header">Game of War</h2>
+        <div id="cards" class="card-images">
+                <div class="card-slot">Card 1:<img src="card-back.jpg" alt="">Score: 0</div>
+                <div class="card-slot">Card 2:<img src="card-back.jpg" alt="">Score: 0</div>
+        </div>
+        
+        <button id="draw-btn" class="draw-btn">Draw</button>
+        <p id="error-msg" class="error-msg"></p>
+
+        <script src="index.js"></script>
+    </body>
+</html>

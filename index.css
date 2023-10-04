@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0.5em 0.5em 0;
+    background-color: rgb(52, 95, 77);
+    background-image: url(blackjack-table-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: goldenrod;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+}
+.card-images {
+    padding: 0.5em 0.5em 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.5em;
+    
+}
+.card-slot {
+    margin: auto;
+    border: thin solid goldenrod;
+    border-radius: 15px;
+    width: 160px;
+}
+img {
+    width: 160px;
+}
+
+button{
+    background-color: rgba(225, 230, 71, 0);
+    color: goldenrod;
+    width: 190px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    font-family: 'Trispace', sans-serif;
+}
+button:hover {
+    background-color: rgb(232, 176, 34);
+    color: darkolivegreen;
+}
+button:active {
+    background-color: rgb(207, 156, 29);
+    color: rgb(76, 96, 42);
+    box-shadow: 0 0 0 1px rgb(67, 84, 37);
+}
+button:disabled {
+    cursor: not-allowed;
+}
+.draw-btn {
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+}
+.remaining-cards {
+    margin-left: 4em;
+}
+.error-msg {
+    text-align: center;
+}
+span {
+    color: crimson;
+}
+
+@media (min-width: 600px){
+    .card-images {
+        grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    }
+    .card-slot {
+        width: 226px;
+    }
+    img {
+        width: 226px;
+    }
+}
